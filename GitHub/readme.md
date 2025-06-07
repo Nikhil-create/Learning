@@ -122,6 +122,10 @@ git branch new-branch test
 ###### Hint
 the above command will create a new-branch based on test branch
 
+##### How to map or publish the branch from local to remote-repo
+###### Command:
+git push --set-upstream origin test
+
 
 
 
