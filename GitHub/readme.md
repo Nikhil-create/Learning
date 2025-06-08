@@ -146,12 +146,17 @@ git push
 ##### * How to discard the changes
 ###### Command:
 Types of reset
-1. Soft Reset -
-2. Mixed Rest - 
+1. Soft Reset - stage everything
+2. Mixed Rest - unstage everything
 3. Hard Reset - it will discard the changes permanently and you will not see them again
 ###### Command:
 git rest <hash-commmit-code>
+git rest --soft <hash-commmit-code>
+git rest --hard <hash-commmit-code>
 
+##### * How to revert the changes
+
+revert
 
 
 
