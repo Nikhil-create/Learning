@@ -143,6 +143,18 @@ git add .
 git commit -m "resolved merge conflict"
 git push
 
+##### * How to discard the changes
+###### Command:
+Types of reset
+1. Soft Reset -
+2. Mixed Rest - 
+3. Hard Reset - it will discard the changes permanently and you will not see them again
+###### Command:
+git rest <hash-commmit-code>
+
+
+
+
 
 
 
