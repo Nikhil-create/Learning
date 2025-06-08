@@ -154,10 +154,6 @@ git rest <hash-commmit-code>
 git rest --soft <hash-commmit-code>
 git rest --hard <hash-commmit-code>
 
-##### * How to revert the changes
-
-revert
-
 
 
 
