@@ -154,8 +154,15 @@ git rest <hash-commmit-code>
 git rest --soft <hash-commmit-code>
 git rest --hard <hash-commmit-code>
 
+##### * How to revert the changes
+###### Command:
+git revert <hash-commit-code>
 
-
+##### * How to stash the changes and work on priority work
+###### Command:
+git stash (stash the changes)
+git stash list (view the stash)
+git stash <stash> (get your stash)
 
 
 
