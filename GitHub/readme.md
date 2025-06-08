@@ -132,9 +132,16 @@ git push -u origin test
 When two people work on same piece of code and we need to choose wich needs
 to be pushes in main branch
 
-
-
-
+##### * Supose you made the changes in same fine simultaneously from branch1 and branch2 and branch2 changes merged first with the main branch
+###### Command:
+git checkout main
+git pull
+get checkout branch1
+git merge main
+(resolve the conflict in the editor)
+git add .
+git commit -m "resolved merge conflict"
+git push
 
 
 
