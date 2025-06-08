@@ -45,7 +45,7 @@ git status
 ###### Command:
 git add ./GitHub/readme.md
 
-##### * With is commiting in github 
+##### * What is commiting in github 
 Commmiting in github is like taking the snapshot of your
 project at the certain point, so that if anything happen
 to the project in future you can easily rollback to the
@@ -127,6 +127,11 @@ the above command will create a new-branch based on test branch
 git push --set-upstream origin test
 or
 git push -u origin test
+
+##### * What is merge conflict
+When two people work on same piece of code and we need to choose wich needs
+to be pushes in main branch
+
 
 
 
