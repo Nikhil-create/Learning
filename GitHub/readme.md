@@ -162,7 +162,7 @@ git revert <hash-commit-code>
 ###### Command:
 git stash (stash the changes)
 git stash list (view the stash)
-git stash <stash> (get your stash)
+git stash apply <stash@{i}> (get your stash)
 
 
 
