@@ -166,7 +166,8 @@ git stash (stash the changes)
 git stash list (view the stash)
 git stash apply <stash@{i}> (get your stash)
 
-//Just for rebase testing
-
+##### > How to rebase a branch
+###### Command:
+[rebase-test branch] git rebase main
 
 
