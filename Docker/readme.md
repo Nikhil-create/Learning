@@ -26,3 +26,42 @@ Docker is a container technology (A tool for creating and manage containers)
 2. Performance can be slow, boot time can be long
 3. Reproducing on another computer server is possible may be tricky
 
+##### > What are images
+They are also called Templates or Blurprints for container.
+It contains the code + required tool/ runtime for the unit of software 
+
+##### > How to create or get images
+You can use pre-exist image from Docker Hub
+<b>Command</b>: docker run node
+
+##### > How to see all the processes and containers docker created for us
+###### Command: 
+docker ps -a
+<b>To see only running processes: </b> docker ps
+
+##### > How to interact with the image or container
+###### Command:
+docker run -it node
+
+##### > How to create your custome image
+Create a file with name Dockerfile
+start with 
+1. Mention your runtime environment
+2. Setup working directory
+3. Copy all your files 
+4. Install the dependencies 
+5. Expose the port
+6. Run your application 
+
+<b>Now we will turn this Dockerfile into the image</b>
+<b>Command:</b> docker build .
+
+##### How to stop running container
+<b>Get the running processes :</b> docker ps
+<b>Stop the process: docker stop:</b> <container-id>
+
+##### How to map the expose port to the system port
+<b>Command:</b> docker run -p 80:5000 <Image>
+<b>Hint:</b> local port: exposed port
+
+
