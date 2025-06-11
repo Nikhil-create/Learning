@@ -26,4 +26,3 @@ Docker is a container technology (A tool for creating and manage containers)
 2. Performance can be slow, boot time can be long
 3. Reproducing on another computer server is possible may be tricky
 
-![alt text](ContainerVsVirualMachine.png)
