@@ -5,10 +5,12 @@ FROM python:3.13.1
 WORKDIR /application
 
 # This means that all the files will be copied to /application in the container.
-COPY . /application
+COPY requirements.txt /application
 
 # Install the required packages from requirements.txt
 RUN pip install -r requirements.txt
+
+COPY . /application
 
 # Expose the port that the application will run on
 EXPOSE 5000

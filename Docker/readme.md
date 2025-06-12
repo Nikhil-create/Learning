@@ -64,4 +64,13 @@ start with
 <b>Command:</b> docker run -p 80:5000 <Image>
 <b>Hint:</b> local port: exposed port
 
+##### Images are read only?
+Once the image is created and you make some changes in your application then the changes 
+will not get reflected to the image you need to rebuild and create a new image.
+
+<b>Hint:</b> Install the dependencies before running your code.
+COPY requirements.txt /application
+RUN pip intsall -r requirements.txt
+COPY . /application
+
 
