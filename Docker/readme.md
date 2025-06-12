@@ -73,4 +73,7 @@ COPY requirements.txt /application
 RUN pip intsall -r requirements.txt
 COPY . /application
 
+##### How to get help or list of commands in docker
+###### Command:
+docker --help
 
