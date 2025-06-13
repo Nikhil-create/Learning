@@ -132,3 +132,25 @@ docker images
 ##### how to rename existing image
 docker tag <existing-image:tag> <new-name:tag>
 
+##### How to login to docker hub from cli
+docker login
+
+##### What is Docker Compose
+This is used to orchestrate multiple containers
+
+##### Docker Compose file
+Docker compose file contains
+1. Services (Container)
+2. Published Ports
+3. Environment variable
+4. Volumes
+5. Network
+
+Name: docker-compose.yaml
+
+##### How to run and stop a docker compose file
+docker compose up
+docker compose up -d (detach mode)
+
+docker compose down
+
