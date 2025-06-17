@@ -28,7 +28,19 @@ class BinaryTree:
                         temp.right = new_node
                         return True
                     temp = temp.right
-                 
+
+    def containWithoutRecursion(self, value):
+        if self.root is None:
+            return False
+        temp = self.root
+        while temp:
+            if temp.value == value:
+                return True
+            elif temp.value > value:
+                temp = temp.left
+            else:
+                temp = temp.right
+        return False
 
 
 
@@ -45,3 +57,6 @@ print(f"{tree_1.root.value}")
 print(f"L - {tree_1.root.left.value}    R - {tree_1.root.right.value}")
 print(f"L - {tree_1.root.left.left.value}")
 print(f"L - {tree_1.root.left.left.left.value}")
+
+print(tree_1.containWithoutRecursion(9))
+print(tree_1.containWithoutRecursion(3))
