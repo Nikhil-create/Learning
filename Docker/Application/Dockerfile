@@ -15,6 +15,8 @@ COPY . /application
 # Expose the port that the application will run on
 EXPOSE 5000
 
+VOLUME ["/application/Feedback"]
+
 CMD ["python", "app.py"]
 # This is the command that will be run when the container is started
 

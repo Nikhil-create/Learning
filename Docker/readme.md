@@ -61,7 +61,7 @@ start with
 <b>Stop the process:</b> docker stop <container-id>
 
 ##### How to map the expose port to the system port
-<b>Command:</b> docker run -p 80:5000 <Image>
+<b>Command:</b> docker run -p 80:  <Image>
 <b>Hint:</b> local port: exposed port
 
 ##### Images are read only?
@@ -135,8 +135,42 @@ docker tag <existing-image:tag> <new-name:tag>
 ##### How to login to docker hub from cli
 docker login
 
+##### How many types of data are in docker 
+1. Application data (stored in Image) - provided by us, Added to image and container in build phase, can't change when image is build.
+2. Temperary app data (stored in container) - Fetched during container runtime, stored in memory or temp file, Dynamic and changing but clearly regular, Read + write temperary
+3. Permanent Data - Fetched during container runtime, stored in memory or database, must not loss when container stops/ restart, Read + write permanent
+
+##### What are volumes 
+Volumes are the folders on your host machine hard drive which are mounted into container 
+Hint: copy only take snapshot but volume is different
+1. Volumes persist if a container shuts down 
+2. A container write the data in volume
+
+##### Difference between Mount and Volume
+Volumn - Managed by docker,
+Mount Managed by you,
+
+##### How to check all the volumes docker managing
+docker volume ls
+
+##### How name the volume
+docker run -p 80:3000 -d --rm --name myapp -v myVolumeName:/app/path myapp:latest
+Hint: -v <volume-name>:<volume-path>
+
+##### How to remove volume
+docker volumn prune
+
+##### How to remove specific volumn 
+docker volume rm <volume-name>
+
+##### How to Bind the path
+in Bind you define the path of host machine
+
+We can do that from container not through Dockerfile
+docker run -p 80:3000 -d --rm --name myapp -v myVolumeName:/app/path -v "%cd%":/app myapp:latest
+
 ##### What is Docker Compose
-This is used to orchestrate multiple containers
+This is used to orchestrate multiple container
 
 ##### Docker Compose file
 Docker compose file contains
